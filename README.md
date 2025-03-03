@@ -12,7 +12,7 @@ This repository contains my shell configuration files, including my `.zshrc`, an
 To manually sync `.zshrc` to GitHub, run:
 
 ```sh
-./shell.sh
+./sync.sh
 ```
 You can also set up a cron job for automatic syncing:
 
@@ -23,7 +23,7 @@ crontab -e
 Add the following line:
 
 ```sh
-*/30 * * * * ~/Code/shell/shell.sh >> ~/.shell_sync.log 2>&1
+*/30 * * * * ~/Code/shell/sync.sh >> ~/.shell_sync.log 2>&1
 ```
 
 This will sync .zshrc every 30 minutes.
